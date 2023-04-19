@@ -75,7 +75,7 @@ const restartButton = document.getElementById("restart");
 const scoreElement = document.getElementById("score");
 
 const base_image = new Image();
-base_image.src = 'hero.png';
+base_image.src = 'images/hero.png';
 
 //frames
 const frame_1 = new Image();
@@ -434,21 +434,21 @@ function drawPlatforms() {
 function drawIndicator (){
 	if (score == 3) {
 		let ez_image = new Image();
-		ez_image.src = 'ez.png';
+		ez_image.src = 'images/ez.png';
 		ez_image.onload = function(){
     	ctx.drawImage(ez_image, canvasWidth/2, canvasHeight/2);
   		}
 	}
 	if (score == 6) {
 		let subprise_image = new Image();
-		subprise_image.src = 'subprise.png';
+		subprise_image.src = 'images/subprise.png';
 		subprise_image.onload = function(){
     	ctx.drawImage(subprise_image, canvasWidth/2, canvasHeight/2);
   		}
 	}
 	if (score == 9 || score == 10)  {
 		let house_image = new Image();
-		house_image.src = 'house.png';
+		house_image.src = 'images/house.png';
 		house_image.onload = function(){
     	ctx.drawImage(house_image, canvasWidth/2, canvasHeight/2);
   		}
