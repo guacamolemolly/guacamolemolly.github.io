@@ -76,6 +76,8 @@ const scoreElement = document.getElementById("score");
 
 const base_image = new Image();
 base_image.src = 'hero.png';
+const base_image2 = new Image();
+base_image2.src = 'hero2.png';
 
 // Initialize layout
 resetGame();
@@ -405,7 +407,74 @@ function drawHero() {
   //   ctx.drawImage(base_image, heroX, heroY);
   // }
 
-  ctx.drawImage(base_image, -heroWidth / 2, -heroHeight / 2);
+
+  var today = new Date();
+  var milliseconds = today.getMilliseconds();
+  console.log("seconds: " + milliseconds);
+  // if (milliseconds > 500) ctx.drawImage(base_image, -heroWidth / 2, -heroHeight / 2);
+  // if (milliseconds < 500) ctx.drawImage(base_image2, -heroWidth / 2, -heroHeight / 2);
+
+  if (milliseconds > 0 &&milliseconds <= 100) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-001_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_1")
+  }
+  else if (milliseconds > 100 && milliseconds <= 200) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-002_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_2")
+  }
+  else if (milliseconds > 200 && milliseconds <= 300) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-003_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_3")
+  }
+  else if (milliseconds > 300 && milliseconds <= 400) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-004_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_4")
+  }
+  else if (milliseconds > 400 && milliseconds <= 500) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-005_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_5")
+  }
+  else if (milliseconds > 500 && milliseconds <= 600) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-006_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_6")
+  }
+  else if (milliseconds > 600 && milliseconds <= 700) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-007_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_7")
+  }
+  else if (milliseconds > 700 && milliseconds <= 800) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-008_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_8")
+  }
+  else if (milliseconds > 800 && milliseconds <= 900) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-009_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_9")
+  }
+  else if (milliseconds > 900 && milliseconds <= 1000) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/10/ezgif-frame-010_prev_ui.png';
+  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_10")
+  }
+  
 
   // // Body
   // drawRoundedRect(
