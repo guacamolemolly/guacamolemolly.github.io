@@ -76,8 +76,68 @@ const scoreElement = document.getElementById("score");
 
 const base_image = new Image();
 base_image.src = 'hero.png';
-const base_image2 = new Image();
-base_image2.src = 'hero2.png';
+
+//frames
+const frame_1 = new Image();
+frame_1.src = 'frames/frame_01.png';
+const frame_2 = new Image();
+frame_2.src = 'frames/frame_02.png';
+const frame_3 = new Image();
+frame_3.src = 'frames/frame_03.png';
+const frame_4 = new Image();
+frame_4.src = 'frames/frame_04.png';
+const frame_5 = new Image();
+frame_5.src = 'frames/frame_05.png';
+const frame_6 = new Image();
+frame_6.src = 'frames/frame_06.png';
+const frame_7 = new Image();
+frame_7.src = 'frames/frame_07.png';
+const frame_8 = new Image();
+frame_8.src = 'frames/frame_08.png';
+const frame_9 = new Image();
+frame_9.src = 'frames/frame_09.png';
+const frame_10 = new Image();
+frame_10.src = 'frames/frame_10.png';
+const frame_11 = new Image();
+frame_11.src = 'frames/frame_11.png';
+const frame_12 = new Image();
+frame_12.src = 'frames/frame_12.png';
+const frame_13 = new Image();
+frame_13.src = 'frames/frame_13.png';
+const frame_14 = new Image();
+frame_14.src = 'frames/frame_14.png';
+const frame_15 = new Image();
+frame_15.src = 'frames/frame_15.png';
+const frame_16 = new Image();
+frame_16.src = 'frames/frame_16.png';
+const frame_17 = new Image();
+frame_17.src = 'frames/frame_17.png';
+const frame_18 = new Image();
+frame_18.src = 'frames/frame_18.png';
+const frame_19 = new Image();
+frame_19.src = 'frames/frame_19.png';
+const frame_20 = new Image();
+frame_20.src = 'frames/frame_20.png';
+const frame_21 = new Image();
+frame_21.src = 'frames/frame_21.png';
+const frame_22 = new Image();
+frame_22.src = 'frames/frame_22.png';
+const frame_23 = new Image();
+frame_23.src = 'frames/frame_23.png';
+const frame_24 = new Image();
+frame_24.src = 'frames/frame_24.png';
+const frame_25 = new Image();
+frame_25.src = 'frames/frame_25.png';
+const frame_26 = new Image();
+frame_26.src = 'frames/frame_26.png';
+const frame_27 = new Image();
+frame_27.src = 'frames/frame_27.png';
+const frame_28 = new Image();
+frame_28.src = 'frames/frame_28.png';
+const frame_29 = new Image();
+frame_29.src = 'frames/frame_29.png';
+const frame_30 = new Image();
+frame_30.src = 'frames/frame_30.png';
 
 // Initialize layout
 resetGame();
@@ -395,6 +455,189 @@ function drawIndicator (){
 	}
 }
 
+function drawAnimatedHero(milliseconds){
+  if (milliseconds > 0 && milliseconds <= 33) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_01.png';
+  	ctx.drawImage(frame_1, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_1")
+  }
+  else if (milliseconds > 33 && milliseconds <= 66) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_02.png';
+  	ctx.drawImage(frame_2, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_2")
+  }
+  else if (milliseconds > 66 && milliseconds <= 99) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_03.png';
+  	ctx.drawImage(frame_3, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_3")
+  }
+  else if (milliseconds > 99 && milliseconds <= 132) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_04.png';
+  	ctx.drawImage(frame_4, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_4")
+  }
+  else if (milliseconds > 132 && milliseconds <= 165) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_05.png';
+  	ctx.drawImage(frame_5, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_5")
+  }
+  else if (milliseconds > 165 && milliseconds <= 198) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_06.png';
+  	ctx.drawImage(frame_6, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_6")
+  }
+  else if (milliseconds > 198 && milliseconds <= 231) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_07.png';
+  	ctx.drawImage(frame_7, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_7")
+  }
+  else if (milliseconds > 231 && milliseconds <= 264) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_08.png';
+  	ctx.drawImage(frame_8, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_8")
+  }
+  else if (milliseconds > 264 && milliseconds <= 297) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_09.png';
+  	ctx.drawImage(frame_9, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_9")
+  }
+  else if (milliseconds > 297 && milliseconds <= 330) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_10.png';
+  	ctx.drawImage(frame_10, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_10")
+  }
+  else if (milliseconds > 330 && milliseconds <= 363) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_11.png';
+  	ctx.drawImage(frame_11, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_11")
+  }
+  else if (milliseconds > 363 && milliseconds <= 396) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_12.png';
+  	ctx.drawImage(frame_12, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_12")
+  }
+  else if (milliseconds > 396 && milliseconds <= 429) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_13.png';
+  	ctx.drawImage(frame_13, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_13")
+  }
+  else if (milliseconds > 429 && milliseconds <= 462) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_14.png';
+  	ctx.drawImage(frame_14, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_14")
+  }
+  else if (milliseconds > 462 && milliseconds <= 495) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_15.png';
+  	ctx.drawImage(frame_15, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_15")
+  }
+  else if (milliseconds > 495 && milliseconds <= 528) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_16.png';
+  	ctx.drawImage(frame_16, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_16")
+  }
+  else if (milliseconds > 528 && milliseconds <= 561) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_17.png';
+  	ctx.drawImage(frame_17, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_17")
+  }
+  else if (milliseconds > 561 && milliseconds <= 594) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_18.png';
+  	ctx.drawImage(frame_18, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_18")
+  }
+  else if (milliseconds > 594 && milliseconds <= 627) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_19.png';
+  	ctx.drawImage(frame_19, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_19")
+  }
+  else if (milliseconds > 627 && milliseconds <= 660) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_20.png';
+  	ctx.drawImage(frame_20, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_20")
+  }
+  else if (milliseconds > 660 && milliseconds <= 693) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_21.png';
+  	ctx.drawImage(frame_21, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_21")
+  }
+  else if (milliseconds > 693 && milliseconds <= 726) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_22.png';
+  	ctx.drawImage(frame_22, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_22")
+  }
+  else if (milliseconds > 726 && milliseconds <= 792) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_23.png';
+  	ctx.drawImage(frame_23, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_23")
+  }
+  else if (milliseconds > 792 && milliseconds <= 792) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_24.png';
+  	ctx.drawImage(frame_24, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_24")
+  }
+  else if (milliseconds > 792 && milliseconds <= 825) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_25.png';
+  	ctx.drawImage(frame_25, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_25")
+  }
+  else if (milliseconds > 825 && milliseconds <= 858) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_26.png';
+  	ctx.drawImage(frame_26, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_26")
+  }
+  else if (milliseconds > 858 && milliseconds <= 891) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_27.png';
+  	ctx.drawImage(frame_27, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_27")
+  }
+  else if (milliseconds > 891 && milliseconds <= 924) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_28.png';
+  	ctx.drawImage(frame_28, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_28")
+  }
+  else if (milliseconds > 924 && milliseconds <= 957) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_29.png';
+  	ctx.drawImage(frame_29, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_29")
+  }
+  else if (milliseconds > 957 && milliseconds <= 999) {
+  	var tempImg = new Image();
+	tempImg.src = 'frames/frame_30.png';
+  	ctx.drawImage(frame_30, -heroWidth / 2, -heroHeight / 2);
+  	console.log("frame_30")
+  }
+}
+
 function drawHero() {
   ctx.save();
   ctx.fillStyle = "black";
@@ -407,74 +650,15 @@ function drawHero() {
   //   ctx.drawImage(base_image, heroX, heroY);
   // }
 
-
   var today = new Date();
   var milliseconds = today.getMilliseconds();
   console.log("seconds: " + milliseconds);
-  // if (milliseconds > 500) ctx.drawImage(base_image, -heroWidth / 2, -heroHeight / 2);
-  // if (milliseconds < 500) ctx.drawImage(base_image2, -heroWidth / 2, -heroHeight / 2);
-
-  if (milliseconds > 0 &&milliseconds <= 100) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-001_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_1")
+  if (score < 5){
+  		ctx.drawImage(base_image, -heroWidth / 2, -heroHeight / 2);
   }
-  else if (milliseconds > 100 && milliseconds <= 200) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-002_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_2")
+  else if (score >= 5){
+  		drawAnimatedHero(milliseconds)
   }
-  else if (milliseconds > 200 && milliseconds <= 300) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-003_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_3")
-  }
-  else if (milliseconds > 300 && milliseconds <= 400) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-004_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_4")
-  }
-  else if (milliseconds > 400 && milliseconds <= 500) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-005_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_5")
-  }
-  else if (milliseconds > 500 && milliseconds <= 600) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-006_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_6")
-  }
-  else if (milliseconds > 600 && milliseconds <= 700) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-007_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_7")
-  }
-  else if (milliseconds > 700 && milliseconds <= 800) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-008_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_8")
-  }
-  else if (milliseconds > 800 && milliseconds <= 900) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-009_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_9")
-  }
-  else if (milliseconds > 900 && milliseconds <= 1000) {
-  	var tempImg = new Image();
-	tempImg.src = 'frames/10/ezgif-frame-010_prev_ui.png';
-  	ctx.drawImage(tempImg, -heroWidth / 2, -heroHeight / 2);
-  	console.log("frame_10")
-  }
-  
 
   // // Body
   // drawRoundedRect(
